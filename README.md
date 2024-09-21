@@ -76,6 +76,23 @@ Non-trainable params: 0
 ## Results
 After training the model, it outputs:
 
-Accuracy: Accuracy for training and validation sets.
-Classification Report: Precision, Recall, and F1-score for the validation set.
-ROC-AUC Score: Measure of model performance.
+- **Accuracy**: Accuracy for training and validation sets.
+ - **Classification Report**: Precision, Recall, and F1-score for the validation set.
+- **ROC-AUC Score**: Measure of model performance.
+Sample output for POC-AUC score:
+```
+Validation ROC-AUC Score: 0.94
+```
+Here’s a classification report for the validation set:
+```
+              precision    recall  f1-score   support
+
+           0       0.97      0.98      0.98      4784
+           1       0.80      0.72      0.76       441
+
+    accuracy                           0.96      5225
+   macro avg       0.88      0.85      0.87      5225
+weighted avg       0.96      0.96      0.96      5225
+```
+
+
