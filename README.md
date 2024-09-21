@@ -7,11 +7,8 @@ This project is a machine learning solution that classifies toxic comments using
 - [Technologies Used](#technologies-used)
 - [Dataset](#dataset)
 - [Model Architecture](#model-architecture)
-- [How to Use](#how-to-use)
 - [Project Structure](#project-structure)
 - [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 This project leverages a deep learning approach for text classification to predict whether comments in a dataset are toxic or non-toxic. Using a CNN-based model, we preprocess raw text data, clean it, and tokenize it before feeding it into the network for classification. The model is evaluated using metrics such as accuracy, ROC-AUC score, and a classification report.
@@ -64,3 +61,21 @@ _________________________________________________________________
 Total params: 2,645,369
 Trainable params: 2,645,369
 Non-trainable params: 0
+```
+## Project Structure
+```
+├── cleaned_train_data.csv        # Preprocessed training data
+├── cleaned_test_data.csv         # Preprocessed test data
+├── test_predictions.csv          # Test set predictions after running the model
+├── toxic_comment_classification.py   # Main Python script
+├── train.csv                     # Training dataset (toxic comments)
+├── test.csv                      # Test dataset (toxic comments)
+├── README.md                     # Project readme file
+└── toxicity_cnn_model.keras      # Saved Keras model
+```
+## Results
+After training the model, it outputs:
+
+Accuracy: Accuracy for training and validation sets.
+Classification Report: Precision, Recall, and F1-score for the validation set.
+ROC-AUC Score: Measure of model performance.
